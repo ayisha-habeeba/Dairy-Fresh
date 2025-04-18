@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Fresh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">Dairy Fresh</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Product</a></li>
+                <li><a href="#offers">Special Offers</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="order-btn" onclick="openPopup()">Order Now</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <h1>Pure & Fresh <br> Dairy Products!</h1>
+        <button class="btn">Shop Now</button>
+    </section>
+
+    <section class="products-section" id="products">
+        <h2 class="section-title">Our Dairy Products</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="fresh milk.jpg" alt="Milk">
+                <h2>Fresh Milk</h2>
+                <p>Pure and organic farm-fresh milk.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="cheese.jpg" alt="Cheese">
+                <h2>Cheese</h2>
+                <p>Delicious and creamy cheese.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="ghee.jpeg" alt="Cheese">
+                <h2>Ghee</h2>
+                <p>Clarified butter made from cow’s milk.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="cream.jpeg" alt="Cheese">
+                <h2>Cream</h2>
+                <p>Smooth and fresh dairy cream.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="curd.jpeg" alt="Cheese">
+                <h2>Curd</h2>
+                <p>Naturally cultured and thick curd.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="butter.jpg" alt="Butter">
+                <h2>Butter</h2>
+                <p>Rich, natural butter.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="offer" id="offers">
+        <h2 class="section-title">Special Offers</h2>
+        <div class="offer-container">
+            <div class="discount">
+                <img src="spl offer.jpg" alt="Special Offer">
+                <h2>Special Offer <br> 15% OFF</h2>
+                <button class="btn">Order Today</button>
+            </div>
+            <div class="special">
+                <img src="yogurt.jpg" alt="Fresh Yogurt">
+                <h2>Yogurt</h2>
+                <p>Creamy and probiotic-rich yogurt.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us" id="about">
+        <h2 class="about-us-heading">About Us</h2> 
+        <div class="about-us__content">
+            <img src="about-us.jpg" alt="Company Image" class="about-us__image">
+            <div class="about-us__text">
+                <p>At Dairy Fresh, we are passionate about bringing you the purest and freshest dairy products straight from the farm. With a commitment to quality, we source our milk, cheese, butter, and yogurt from trusted local farms that follow ethical and sustainable dairy farming practices. Our mission is to deliver nutritious, wholesome, and delicious dairy products that enrich your daily life. Whether you are looking for farm-fresh milk, creamy cheese, or probiotic-rich yogurt, we ensure that every product is crafted with care, hygiene, and love.
+                <br><br>Experience the goodness of dairy—naturally fresh, naturally delicious!
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+      <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-details">
+                <p class="con-detail"><strong>Email:</strong> support@dairyfresh.com</p>
+                <p class="con-detail"><strong>Phone:</strong> +123 456 7890</p>
+                <p class="con-detail"><strong>Address:</strong> 123 Dairy Street, Farmtown, USA</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p  style="color: #66b8dc; font-weight: bold;">Follow us on</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+        
+    </footer>
+    <div id="order-popup" class="order-popup">
+        <div class="popup-content">
+            <!-- <span class="close-btn" onclick="closePopup()">&times;</span> -->
+            <h2>Order Form</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Product Name" required>
+                <input type="number" placeholder="Quantity" required>
+                <button type="submit" class="btn">Submit Order</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    
+
+</body>
+</html>
